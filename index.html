@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片墙</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            list-style: none;
+            float: left;
+            width: 150px;
+            background-color: white;
+            border: 1px solid #ddd;
+            margin-left: 45px;
+            margin-top: 130px;
+        }
+        
+        .container {
+            background-image: url(images/bg3.jpg);
+            width: 1250px;
+            height: 700px;
+            margin: 0 auto;
+        }
+        
+        img {
+            width: 130px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        
+        span {
+            display: block;
+            text-align: center;
+        }
+        
+        li:first-child {
+            transform: rotate(-5deg);
+        }
+        
+        li:nth-child(2) {
+            transform: rotate(10deg);
+        }
+        
+        li:nth-child(3) {
+            transform: rotate(5deg);
+        }
+        
+        li:nth-child(4) {
+            transform: rotate(-10deg);
+        }
+        
+        li:nth-child(5) {
+            transform: rotate(-3deg);
+        }
+        
+        li:last-child {
+            transform: rotate(8deg);
+        }
+        
+        li:hover {
+            transform: rotate(0deg) scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>
+                <img src="images/11.jpg">
+                <span>相识</span>
+            </li>
+            <li>
+                <img src="images/22.jpg">
+                <span>凝视</span>
+            </li>
+            <li>
+                <img src="images/33.JPG">
+                <span>甜睡</span>
+            </li>
+            <li>
+                <img src="images/44.JPG">
+                <span>逗乐</span>
+            </li>
+            <li>
+                <img src="images/55.JPG">
+                <span>奔跑</span>
+            </li>
+            <li>
+                <img src="images/66.JPG">
+                <span>漠视</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
